@@ -85,7 +85,7 @@ function PostThread({ userId }: { userId: string }) {
         />
 
         {/* Submit button */}
-        <Button type="submit" className="bg-primary-500">
+        <Button type="submit" className="bg-gray-800 hover:bg-gray-500">
           Post Thread
         </Button>
       </form>

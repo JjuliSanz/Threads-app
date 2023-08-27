@@ -22,23 +22,24 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
         <body className={inter.className}>
-          <Topbar/>
-          
+          <Topbar />
+
           <main className="flex flex-row">
-            <LeftSideBar/>
+            <LeftSideBar />
 
             <section className="main-container">
-              <div className="w-full max-w-4xl">
-                {children}
-              </div>
+              <div className="w-full max-w-4xl">{children}</div>
             </section>
 
-            <RightSideBar/>
+            <RightSideBar />
           </main>
 
-          <Bottombar/>
-          </body>
+          <Bottombar />
+        </body>
       </html>
     </ClerkProvider>
   );

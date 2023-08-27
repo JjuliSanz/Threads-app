@@ -1,9 +1,8 @@
-// Import necessary modules and components
+
 import { fetchUser, fetchUsers } from "@/lib/actions/user.actions";
 import { currentUser } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
 import UserCard from "../cards/UserCard"; // Import the UserCard component
-import { fetchCommunities } from "@/lib/actions/community.actions";
 
 // RightSideBar component definition
 async function RightSideBar() {
@@ -26,10 +25,10 @@ async function RightSideBar() {
   return (
     suggestedUsers.users.length > 0 && (
       <section className="custom-scrollbar rightsidebar">
-        <div className="flex flex-1 flex-col justify-start">
-          <h3 className="text-heading4-medium text-light-1">Suggested Users</h3>
+        <div className="flex flex-1 flex-col justify-start items-center">
+          <h3 className="text-heading4-medium text-light-1 mt-3">Suggested Users</h3>
 
-          <div className="mt-7">
+          <div className="mt-7 bg-gray-700 rounded-full p-3">
             {/* Iterate through suggested users and render UserCard for each */}
             {suggestedUsers.users.map((person) => (
               <UserCard
@@ -43,7 +42,7 @@ async function RightSideBar() {
             ))}
           </div>
         </div>
-      </section>
+      </section>           
     )
   );
 }

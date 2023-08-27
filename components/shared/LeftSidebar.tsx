@@ -34,7 +34,7 @@ function LeftSideBar() {
             <Link
               href={link.route}
               key={link.label}
-              className={`leftsidebar_link ${isActive && "bg-primary-500"}`}
+              className={`leftsidebar_link ${isActive && "bg-gray-800"}`}
             >
               <Image
                 src={link.imgURL}
@@ -50,7 +50,7 @@ function LeftSideBar() {
         {/* Logout button */}
         <SignedIn>
           <SignOutButton signOutCallback={() => router.push("/sign-in")}>
-            <div className="flex cursor-pointer gap-4 p-4">
+            <div className="leftsidebar_link">
               <Image
                 src="/assets/logout.svg"
                 alt="logout"

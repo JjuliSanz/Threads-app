@@ -1,4 +1,3 @@
-// Import necessary components and libraries
 import ProfileHeader from "@/components/shared/ProfileHeader";
 import { fetchUser } from "@/lib/actions/user.actions";
 import { currentUser } from "@clerk/nextjs";
@@ -41,22 +40,22 @@ async function Page({ params }: { params: { id: string } }) {
         {/* Use Tabs component for navigation */}
         <Tabs defaultValue="threads" className="w-full">
           {/* Render tab triggers */}
-          <TabsList className="tab">
+          <TabsList className="tab p-0">
             {profileTabs.map((tab) => (
               <TabsTrigger key={tab.label} value={tab.value} className="tab">
                 {/* Display tab icon */}
                 <Image
                   src={tab.icon}
                   alt={tab.label}
-                  width={24}
-                  height={24}
+                  width={26}
+                  height={26}
                   className="object-contain"
                 />
                 <p className="max-sm:hidden">{tab.label}</p>
 
                 {/* Display thread count for the Threads tab */}
                 {tab.label === "Threads" && (
-                  <p className="ml-1 rounded-sm bg-light-4 px-2 py-1 !text-tiny-medium text-light-2">
+                  <p className="rounded bg-gray-800 px-2 py-1 !text-tiny-medium text-light-2">
                     {userInfo?.threads?.length}
                   </p>
                 )}
