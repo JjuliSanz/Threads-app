@@ -16,6 +16,7 @@ export default async function Home() {
   // Fetch user information
   const userInfo = await fetchUser(user.id);
 
+  // If the user has not completed onboarding, redirect to the onboarding page
   if (!userInfo?.onboarded) redirect("/onboarding");
 
   return (
