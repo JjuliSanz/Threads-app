@@ -21,7 +21,7 @@ export default async function Home() {
 
   return (
     <>
-      <section className="mt-3 flex flex-col gap-10">
+      <section className="md:mt-3 mt-10 flex flex-col gap-10">
         {result.posts.length === 0 ? (
           <p className="no-result">No threads found</p>
         ) : (

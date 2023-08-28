@@ -33,7 +33,7 @@ async function Page({
 
   // Return Search page
   return (
-    <section>
+    <section className="mt-10 md:mt-3">
       {/* Display page title */}
       <h1 className="head-text mb-10">Search</h1>
 

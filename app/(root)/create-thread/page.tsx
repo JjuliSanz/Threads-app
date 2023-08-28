@@ -19,10 +19,12 @@ async function Page() {
   // Return Create-thread page
   return (
     <>
-      <h1 className="head-text">Create Thread</h1>
+      <section className="mt-10 md:mt-3">
+        <h1 className="head-text">Create Thread</h1>
 
-      {/* Render the PostThread component and pass the user's ID */}
-      <PostThread userId={userInfo._id} />
+        {/* Render the PostThread component and pass the user's ID */}
+        <PostThread userId={userInfo._id} />
+      </section>
     </>
   );
 }

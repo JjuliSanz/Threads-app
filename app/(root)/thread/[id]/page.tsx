@@ -25,7 +25,7 @@ const Page = async ({ params }: { params: { id: string } }) => {
 
   // Return Thread page
   return (
-    <section className="relative">
+    <section className="relative mt-10 md:mt-3">
       {/* Display the main thread */}
       <div>
         <ThreadCard

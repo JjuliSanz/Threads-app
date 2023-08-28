@@ -16,7 +16,7 @@ function LeftSideBar() {
       <div className="flex w-full flex-1 flex-col gap-6 px-6 justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-4 box-border">
-          <Image src="/assets/logo.svg" alt="logo" width={32} height={32} />
+          <Image src="/assets/logo.svg" alt="logo" width={32} height={32} className="rounded-lg"/>
           <p className="text-heading3-bold text-light-1 max-xs:hidden ">
             Threads
           </p>

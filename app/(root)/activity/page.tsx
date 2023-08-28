@@ -23,10 +23,10 @@ async function Page() {
 
   // Return the Activity page
   return (
-    <section>
+    <section className="mt-10 md:mt-3 ">
       <h1 className="head-text mb-10">Activity</h1>
 
-      <section className="mt-10 flex flex-col gap-5">
+      <div className="mt-10 flex flex-col gap-5">
         {activity.length > 0 ? (
           <>
             {activity.map((activity) => (
@@ -54,7 +54,7 @@ async function Page() {
         ) : (
           <p className="!text-base-regular text-light-3">No activity yet</p>
         )}
-      </section>
+      </div>
     </section>
   );
 }

@@ -25,7 +25,7 @@ async function Page({ params }: { params: { id: string } }) {
 
   // Return Profile page
   return (
-    <section>
+    <section className="mt-10 md:mt-3">
       {/* Render the ProfileHeader component with user information */}
       <ProfileHeader
         accountId={userInfo.id}

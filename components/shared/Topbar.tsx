@@ -11,7 +11,7 @@ function Topbar() {
     <div className="topbar">
       {/* Logo */}
       <Link href="/" className="flex gap-4 md:hidden pl-3">
-        <Image src="/assets/logo.svg" alt="logo" width={32} height={32} />
+        <Image src="/assets/logo.svg" alt="logo" width={32} height={32} className="rounded-lg"/>
         <p className="text-heading3-bold text-light-1 max-xs:hidden">Threads</p>
       </Link>
 

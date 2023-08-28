@@ -59,7 +59,7 @@
   }
 
   .topbar {
-    @apply flex md:hidden pl-3 fixed bg-dark-2 items-center justify-between w-full;
+    @apply flex md:hidden pl-3 fixed bg-opacity-0 items-center justify-between w-full;
   }
 
   .bottombar {

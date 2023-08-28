@@ -26,13 +26,15 @@ async function Page() {
   // Return Edit Profile page
   return (
     <>
-      {/* Display page title and description */}
-      <h1 className="head-text">Edit profile</h1>
-      <p className="mt-3 text-base-regular text-light-2">Make any changes</p>
+      <section className="mt-10 md:mt-3">
+        {/* Display page title and description */}
+        <h1 className="head-text">Edit profile</h1>
+        <p className="mt-3 text-base-regular text-light-2">Make any changes</p>
 
-      {/* Display AccountProfile component */}
-      <section className="mt-12">
-        <AccountProfile user={userData} btnTitle="Save" />
+        {/* Display AccountProfile component */}
+        <div className="mt-12">
+          <AccountProfile user={userData} btnTitle="Save" />
+        </div>
       </section>
     </>
   );
