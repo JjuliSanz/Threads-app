@@ -10,8 +10,8 @@ import Bottombar from "@/components/shared/Bottombar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Threads",
-  description: "A Next.js 13 Meta Threads Application",
+  title: "Threads Clone App",
+  description: "Dynamic web application that showcases a fusion of cutting-edge technologies to deliver a seamless user experience. Built with Next.js 13.4, the power of Server Side Rendering (SSR) ensures optimal performance and SEO friendliness.",
 };
 
 export default function RootLayout({
