@@ -5,7 +5,7 @@
 @layer components {
   /* main */
   .main-container {
-    @apply flex min-h-screen flex-1 flex-col pb-10 pt-5 max-md:pb-32 sm:px-10;
+    @apply flex min-h-screen flex-1 flex-col pb-10 pt-5 max-md:pb-32 sm:px-10 xl:px-0;
   }
 
   /* Head Text */
@@ -114,6 +114,16 @@
   .custom-scrollbar::-webkit-scrollbar-thumb:hover {
     background: #7878a3;
   }
+
+  .profile-custom-scrollbar::-webkit-scrollbar {
+    width: 1px; /* Ancho del scrollbar */
+    height: 1px; /* Altura del scrollbar (si es un scrollbar vertical) */
+    background: transparent; /* Color de fondo del scrollbar */
+  }
+  .profile-custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #888; /* Color del scrollbar */
+    border-radius: 10px; /* Bordes redondeados del scrollbar */
+  }
 }
 
 /* Clerk Responsive fix */
@@ -144,7 +154,7 @@
 }
 
 .account-form_image-input {
-  @apply cursor-pointer border-none bg-transparent outline-none file:text-blue !important;
+  @apply cursor-pointer border border-dark-4 bg-dark-3 outline-none file:text-blue !important;
 }
 
 .account-form_input {
@@ -162,9 +172,11 @@
 
 /* Stars */
 html {
-  height: 100%;
+ position: relative;
+}
+body {
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  overflow: hidden;
+  min-height: 100vh;
 }
 #stars {
   width: 1px;

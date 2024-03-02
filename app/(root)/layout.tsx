@@ -11,7 +11,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Threads Clone App",
-  description: "Dynamic web application that showcases a fusion of cutting-edge technologies to deliver a seamless user experience. Built with Next.js 13.4, the power of Server Side Rendering (SSR) ensures optimal performance and SEO friendliness.",
+  description:
+    "Dynamic web application that showcases a fusion of cutting-edge technologies to deliver a seamless user experience. Built with Next.js 13.4, the power of Server Side Rendering (SSR) ensures optimal performance and SEO friendliness.",
 };
 
 export default function RootLayout({
@@ -22,13 +23,16 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
+        <div className="min-h-screen w-full overflow-hidden absolute inset-0 z-[-1]">
         <div id="stars"></div>
         <div id="stars2"></div>
         <div id="stars3"></div>
+        </div>
+        
         <body className={inter.className}>
           <Topbar />
 
-          <main className="flex flex-row">
+          <main className="flex flex-row custom-bg">
             <LeftSideBar />
 
             <section className="main-container">
